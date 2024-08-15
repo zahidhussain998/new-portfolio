@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -23,10 +24,10 @@ function Footer() {
             <span class="w-2">
               
             </span>
-           <a href="/Subscribe">
+           <Link to="/Subscribe">
              Subscribe
 
-            </a> 
+            </Link> 
           </a>
           <a
             href="/"

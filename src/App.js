@@ -22,7 +22,7 @@ import Projects from "./Projects.js";
 function App() {
   return (
     <main className="flex flex-col items-center">
-      <div className="max-w-screen-xl self-stretch m-auto w-full">
+      <div className="max-w-7xl self-stretch m-auto w-full">
         <Router>
           <Header />
           <div className="px-6 sm:px-12 py-5">
@@ -30,8 +30,8 @@ function App() {
               <Route path="/" element={<Main />} />
               <Route path="/certificate" element={<Certificate />} />
               <Route path="/projects" element={ <Projects />} />
-              <Route path="/subscribe" element={<Subscribe className="max-w-md" />} />
-            </Routes>
+              <Route path="/subscribe" element={<Subscribe className="max-w-sm mx-auto" />} />
+             </Routes>
           </div>
           <Routes>
             <Route path="/" element={<Dis />} />

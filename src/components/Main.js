@@ -3,98 +3,84 @@ import { IoLocationOutline } from "react-icons/io5";
 
 function Main() {
   return (
-    <section className="flex flex-col items-center sm:flex-row mb-12">
-       <div className='mb-3 flex flex-row flex-wrap'>
+    <section className="flex flex-col items-center sm:flex-row mb-5 ">
+      <div className="mb-6 sm:mb-0 sm:mr-6 flex-shrink-0">
         <img
-          className='rounded-full mx-auto mt-3 sm:mr-6' // Center the image on mobile, add margin top
-          src='https://avatars.githubusercontent.com/u/100913055?v=4'
-          alt='placeholder'
-          width={270}
-          height={270}
+          className="rounded-full mx-auto sm:mx-0"
+          src="https://avatars.githubusercontent.com/u/100913055?v=4"
+          alt="Zahid Hussain"
+          width={250}
+          height={250}
         />
       </div>
-      <div className="flex flex-row items-center justify-center">
-        <div className="">
-          <h1 className="text-3xl mb-3 uppercase font-extrabold">
-            ZAHID HUSSAIN
-          </h1>
-          <div className="">
-             <span className="text-stone-400 mb-3 flex flex-row items-center font-light ">  GitHub Active open source contributer  </span> 
-            </div>
-          <span className="text-stone-400  mb-3 flex flex-row items-center font-light">
-            <svg
-              stroke="currentColor"
-              fill="none"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="mr-1 w-4 h-4"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-            </svg>
-           
-           <div>
-           Full-Stack Developer @ Fiverr.com
-            </div> 
+      <div className="flex flex-col items-center sm:items-start text-center sm:text-center">
+        <h1 className="text-3xl mb-2 uppercase font-extrabold">
+          Zahid Hussain
+        </h1>
+        <div className="text-gray-600 flex items-center font-light">
+          Active Open Source Contributor | GitHub
+        </div>
+        <div className="text-gray-600  mt-2 mb-2 flex items-center font-light">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="mr-1 w-4 h-4"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+         <p>  Full-Stack Developer @freelancer.com </p>
+        </div>
+        <div className="text-gray-600 mb-3 flex items-center font-light">
+          <IoLocationOutline className="mt-1 mb-1" />
+          Hyderabad, Pakistan 🇵🇰
+        </div>
+        <div className="flex flex-wrap justify-center sm:justify-start mb-3">
+          <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal mt-3 mr-2">
+            Full Stack
           </span>
-          <div className="flex flex-row items-center font-light">
-            <h1 className="text-stone-400 mb-3 flex">
-              <IoLocationOutline className="mt-1 mr-1" />
-              <div> HYDERABAD, THE PAKISTAN . from 🇵🇰 </div>
-            </h1>
-          </div>
-          <div className="flex flex-row flex-wrap items-center">
-            <ul className="flex flex-row flex-wrap">
-              <li className="flex flex-row items-center last:mr-0 mr-2 mb-2">
-                <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal last:mr-0 mt-3">
-                  Full Stack
-                </span>
-              </li>
-              <li className="flex flex-row items-center last:mr-0 mr-2 mb-2">
-                <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal last:mr-0 mt-3">
-                  Javascript
-                </span>
-              </li>
-              <li className="flex flex-row items-center last:mr-0 mr-2 mb-2">
-                <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal last:mr-0 mt-3">
-                  React
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div className="mt-3">
-            <ul className="flex flex-row flex-wrap items-center">
-              <li className="flex flex-row items-center last:mr-0 mr-4 mb-2">
-                <a
-                  href="https://www.linkedin.com/in/zahid-husssain-685b91240/"
-                  className="transition duration-200 ease-in-out flex flex-row items-center hover:text-red-600 "
-                  title="Zahid Hussain on LinkedIn"
+          <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal mt-3 mr-2">
+            JavaScript
+          </span>
+          <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal mt-3">
+            React
+          </span>
+        </div>
+        <div className="flex justify-center sm:justify-start mt-2">
+          <ul className="flex flex-wrap">
+            <li className="mr-4 mb-2">
+              <a
+                href="https://www.linkedin.com/in/zahid-husssain-685b91240/"
+                className="transition duration-200 ease-in-out flex items-center hover:text-red-600"
+                title="Zahid Hussain on LinkedIn"
+              >
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 448 512"
+                  className="w-6 h-6"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 448 512"
-                    class="w-6 h-6"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
-                  </svg>
-                </a>
-              </li>
-              <li className="flex flex-row items-center last:mr-0 mr-4 mb-2">
-                <a
-                  href="https://github.com/zahidhussain998"
-                  className="transition duration-200 ease-in-out flex flex-row items-center hover:text-red-600 "
-                  title="Zahid Hussain on GitHub"
-                >
+                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                </svg>
+              </a>
+            </li>
+            <li className="mr-4 mb-2">
+              <a
+                href="https://github.com/zahidhussain998"
+                className="transition duration-200 ease-in-out flex items-center hover:text-red-600"
+                title="Zahid Hussain on GitHub"
+              >
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -132,8 +118,6 @@ function Main() {
             </ul>
           </div>
         </div>
-      </div>
-
     </section>
   );
 }

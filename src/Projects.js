@@ -1,16 +1,13 @@
 import React from "react";
+import { ShowMore } from '@re-dev/react-truncate'
+
 
 // Helper function to get the formatted date
-const getDate = () => {
-  const currentDate = new Date();
-  const year = currentDate.getFullYear();
-  const month = String(currentDate.getMonth() + 1).padStart(2, "0"); // Adding 1 because months are zero-indexed
-  const day = String(currentDate.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-};
+
 
 const projectsData = [
   {
+    id: 1,
     img: "2.jpg",
     title: "News Application",
     dis: "Discover the latest news with our cutting-edge news app built using TypeScript, Next.js, Tailwind CSS, and GraphQL. Stay informed with real-time updates, explore various news categories",
@@ -22,29 +19,31 @@ const projectsData = [
     a: "https://github.com/zahidhussain998/news-application",
   },
   {
-    id: 1,
+    id: 2,
     img: "3.jpg",
     title: "Netflix Clone",
-    dis: "Experience the magic of the world's leading streaming platform with our Netflix clone project. Built using cutting-edge technologies such as React, Tailwind CSS, Redux, and IMDb APIs,",
+    dis: "Experience the magic of the world's leading streaming platform with our Netflix clone project. Built using cutting-edge technologies such as React, Tailwind CSS, Redux, and IMDb APIs",
     tag1: "React.js",
     tag2: "Tailwindcss",
     tag3: "Typescript",
     button: "Source Code",
     date: "2023/4/5",
+    a: "https://github.com/zahidhussain998/netflix-clone",
   },
   {
-    id: 1,
+    id: 3,
     img: "4.jpg",
-    title: "Tesla clone",
+    title: "Tesla Clone",
     dis: "I am thrilled to have worked on this Tesla clone project, and I am confident in my ability to deliver exceptional results. Let's collaborate to bring your ideas to life and create an impressive clone of the Tesla website.",
     tag1: "React.js",
     tag2: "Javascript",
     tag3: "Tailwindcss",
     button: "Source Code",
     date: "2023/6/22",
+    a: "https://github.com/zahidhussain998/tesla-clone",
   },
   {
-    id: 1,
+    id: 4,
     img: "5.jpg",
     title: "Radiant Pulse",
     dis: "Radiant Pulse is a dynamic blog website that showcases a diverse range of content and insights on various topics. Powered by Next.js and backed by Sanity CMS, it offers a seamless and immersive user experience.",
@@ -52,66 +51,95 @@ const projectsData = [
     tag2: "CMS",
     tag3: "Sanity.io",
     button: "Source Code",
-    date: "23/9/11",
+    date: "2023/9/11",
+    a: "https://github.com/zahidhussain998/radiant-pulse",
   },
- 
-
+  {
+    id: 4,
+    img: "landing.png",
+    title: "Animated-landing Page",
+    dis: "is a visually engaging web application built with React.js, utilizing Clerk for authentication, Tailwind CSS for responsive and modern styling, and Framer Motion for dynamic animations.",
+    tag1: "clerk auth,",
+    tag2: "frama-motion",
+    tag3: "tailwindcss",
+    button: "Source Code",
+    date: "2024/5/15",
+    a: "https://github.com/zahidhussain998/Animated-Landing-Page",
+  },
+  {
+    id: 4,
+    img: "chess.png",
+    title: "Chess Simple",
+    dis: "Developed a fully functional chess game with real-time multiplayer capabilities, The application features a responsive design and seamless user experience leveraging modern web technologies. Implemented game state management, move validation, and real-time updates",
+    tag1: "websocket,",
+    tag2: "typescript,",
+    tag3: "chess.js",
+    button: "Source Code",
+    date: "2024/6/24",
+    a: "https://github.com/zahidhussain998/simple-chess",
+  },
   // Add more projects as needed
 ];
 
 function Projects({ projects }) {
   return (
-    <section className="px-6 sm:px-12 py-6 ">
+    <section className="px-6 sm:px-12 py-6">
       <h1 className="text-3xl mb-6 uppercase font-extrabold">Projects</h1>
-      <div className="flex flex-row flex-wrap gap-12">
+      <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
+            className="bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:border-gray-700 flex flex-col overflow-hidden shadow-white"
           >
             <img
               className="object-cover w-full h-40 rounded-t-lg"
               src={project.img}
               alt={`Project ${project.id}`}
             />
-            <div className="p-5 h-full">
-              <a href="/">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="p-5 flex flex-col flex-grow">
+              <a href={project.a} target="_blank" rel="noopener noreferrer">
+                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   {project.title}
                 </h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                {project.dis}
+              <p className="mb-3 text-gray-700 dark:text-gray-400 flex-grow overflow-hidden ">
               </p>
-              <ul className="flex flex-row flex-wrap">
-                <li className="flex flex-row items-center last:mr-0 mr-2 mb-5 gap-3">
-                  <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal last:mr-0 mt-3">
+              <ShowMore lines={3}>{project.dis} </ShowMore>
+              <ul className="flex flex-wrap gap-2 mb-4">
+                <li>
+                  <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal">
                     {project.tag1}
                   </span>
-                  <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal last:mr-0 mt-3">
+                </li>
+                <li>
+                  <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal">
                     {project.tag2}
                   </span>
-                  <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal last:mr-0 mt-3">
+                </li>
+                <li>
+                  <span className="inline-block bg-gray-200 rounded-sm px-2 py-1 text-xs font-normal">
                     {project.tag3}
                   </span>
                 </li>
               </ul>
-              <div className="flex flex-row items-center">
-                <div className="transition duration-200 ease-in-out flex flex-row items-center hover:bg-black hover:text-white mr-4 bg-white py-2 px-3 rounded shadow-sm border border-solid border-gray-300">
-                  <a href={project.a} target="_blank" rel="noopener noreferrer">
-                    {project.button}
-                  </a>
-                </div>
-
+              <div className="flex items-center justify-between">
+                <a
+                  href={project.a}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition"
+                >
+                  {project.button}
+                </a>
                 <div className="text-xs text-gray-500">
-                  <div className="flex flex-row items-center">
+                  <div className="flex items-center">
                     <svg
                       stroke="currentColor"
                       fill="none"
-                      stroke-width="2"
+                      strokeWidth="2"
                       viewBox="0 0 24 24"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="mr-1"
                       height="1em"
                       width="1em"
@@ -129,7 +157,7 @@ function Projects({ projects }) {
                       <line x1="8" y1="2" x2="8" y2="6"></line>
                       <line x1="3" y1="10" x2="21" y2="10"></line>
                     </svg>
-                    <div>{project.date}</div>
+                    {project.date}
                   </div>
                 </div>
               </div>
