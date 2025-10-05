@@ -4,3 +4,16 @@
 
 
 
+/* Add to your global CSS */
+.border-divide {
+  border-color: rgb(229 231 235 / 0.8);
+}
+
+/* Fix for nth-child selectors in grid */
+.grid > div:nth-child(2n) {
+  /* For 2-column layout */
+}
+
+.grid > div:nth-child(3n) {
+  /* For 3-column layout */
+}
