@@ -3,19 +3,43 @@ import { ShowMore } from '@re-dev/react-truncate'
 
 const projectsData = [
   {
+    id: 0,
+    img: "pomodoro.png",
+    title: "Pomodoro",
+    dis: "A feature-rich Pomodoro timer application with task management and productivity tracking. Built with Next.js and TypeScript, utilizing Supabase for backend services and real-time data sync, with Redux managing application state for seamless timer functionality and persistent user sessions.",
+    tag1: "TypeScript",
+    tag2: "Stripe",
+    tag3: "Supabase",
+    button: "Live Link",
+    date: "2025/2/22",
+    a: "",
+  },
+  {
     id: 1,
+    img: "task.png",
+    title: "task management",
+dis: "A modern task management app with drag-and-drop functionality built using dnd-kit. Features smooth animations, intuitive board organization, and efficient state management for seamless task tracking and productivity.",
+    tag1: "dnd-kit",
+    tag2: "next.js",
+    tag3: "state-management",
+    button: "Live Link",
+    date: "2025/3/24",
+    a: "https://pomodoro-zahidhussain998-zahidhussain998s-projects.vercel.app/",
+  },
+  {
+    id: 2,
     img: "2.jpg",
     title: "News Application",
     dis: "Discover the latest news with our cutting-edge news app built using TypeScript, Next.js, Tailwind CSS, and GraphQL. Stay informed with real-time updates, explore various news categories",
     tag1: "Next.js",
     tag2: "GraphQl",
     tag3: "Typescript",
-    button: "Source Code",
+    button: "Link",
     date: "2023/3/3",
-    a: "https://github.com/zahidhussain998/news-application",
+    a: "https://cn-news-nine.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     img: "3.jpg",
     title: "Netflix Clone",
     dis: "Experience the magic of the world's leading streaming platform with our Netflix clone project. Built using cutting-edge technologies such as React, Tailwind CSS, Redux, and IMDb APIs",
@@ -27,19 +51,19 @@ const projectsData = [
     a: "https://github.com/zahidhussain998/netflix-clone",
   },
   {
-    id: 3,
-    img: "4.jpg",
+    id: 4,
+    img:"4.jpg",
     title: "Tesla Clone",
     dis: "I am thrilled to have worked on this Tesla clone project, and I am confident in my ability to deliver exceptional results. Let's collaborate to bring your ideas to life and create an impressive clone of the Tesla website.",
     tag1: "React.js",
     tag2: "Javascript",
     tag3: "Tailwindcss",
-    button: "Source Code",
+    button: "Link",
     date: "2023/6/22",
-    a: "https://github.com/zahidhussain998/tesla-clone",
+    a: "https://tesla-clone-seven-black.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     img: "5.jpg",
     title: "Netialap.com",
     dis: "netialap.com is a dynamic blog website that showcases a diverse range of content and insights on various topics. Powered by Next.js and backed by Sanity CMS, it offers a seamless and immersive user experience.",
@@ -47,23 +71,23 @@ const projectsData = [
     tag2: "CMS",
     tag3: "Sanity.io",
     button: "Source Code",
-    date: "2023/9/11",
+    date: "2024/9/11",
     a: "https://github.com/zahidhussain998/radiant-pulse",
   },
   {
-    id: 5,
+    id: 6,
     img: "landing.png",
     title: "Animated-landing Page",
     dis: "is a visually engaging web application built with React.js, utilizing Clerk for authentication, Tailwind CSS for responsive and modern styling, and Framer Motion for dynamic animations.",
     tag1: "clerk auth",
     tag2: "frama-motion",
     tag3: "tailwindcss",
-    button: "Source Code",
+    button: "Live Link",
     date: "2024/5/15",
-    a: "https://github.com/zahidhussain998/Animated-Landing-Page",
+    a: "https://landingpage-nine-gamma.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     img: "chess.png",
     title: "Chess Simple",
     dis: "Developed a fully functional chess game with real-time multiplayer capabilities, The application features a responsive design and seamless user experience leveraging modern web technologies. Implemented game state management, move validation, and real-time updates",
@@ -88,7 +112,7 @@ function Projects({ projects }) {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="border-divide group relative overflow-hidden border-r border-b last:border-r-0 md:nth-child-2n:border-r-0 lg:nth-child-2n:border-r lg:nth-child-3n:border-r-0"
+              className="border-divide group relative overflow-hidden border-r border-b border-l border-t last:border-r-0 md:nth-child-2n:border-r-0 lg:nth-child-2n:border-r lg:nth-child-3n:border-r-0"
             >
               {/* Hover Background Effect */}
               <div className="absolute inset-0 bg-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
