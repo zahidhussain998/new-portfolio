@@ -30,7 +30,7 @@ dis: "A modern task management app with drag-and-drop functionality built using 
     id: 3,
     img: "booking.png",
     title: "booking-system",
-dis: "",
+dis: "Complete booking solution with live slot availability, secure Stripe payments, and automatic Google Calendar scheduling. Users receive instant email confirmations via Resend, all wrapped in a beautiful Aceternity UI for effortless reservations",
     tag1: "supabase",
     tag2: "redux-thunk",
     tag3: "stripe",
