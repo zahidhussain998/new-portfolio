@@ -12,7 +12,7 @@ const projectsData = [
     tag3: "Supabase",
     button: "Live Link",
     date: "2025/2/22",
-    a: "",
+    a: "https://pomodoro-zahidhussain998-zahidhussain998s-projects.vercel.app/",
   },
   {
     id: 1,
@@ -24,10 +24,22 @@ dis: "A modern task management app with drag-and-drop functionality built using 
     tag3: "state-management",
     button: "Live Link",
     date: "2025/3/24",
-    a: "https://pomodoro-zahidhussain998-zahidhussain998s-projects.vercel.app/",
+    a: "https://taskms-zahidhussain998-zahidhussain998s-projects.vercel.app/",
+  },
+    {
+    id: 3,
+    img: "booking.png",
+    title: "booking-system",
+dis: "",
+    tag1: "supabase",
+    tag2: "redux-thunk",
+    tag3: "stripe",
+    button: "Source Code",
+    date: "2025/3/24",
+    a: "https://github.com/zahidhussain998/Booking-System",
   },
   {
-    id: 2,
+    id: 4,
     img: "2.jpg",
     title: "News Application",
     dis: "Discover the latest news with our cutting-edge news app built using TypeScript, Next.js, Tailwind CSS, and GraphQL. Stay informed with real-time updates, explore various news categories",
@@ -39,7 +51,7 @@ dis: "A modern task management app with drag-and-drop functionality built using 
     a: "https://cn-news-nine.vercel.app/",
   },
   {
-    id: 3,
+    id: 5,
     img: "3.jpg",
     title: "Netflix Clone",
     dis: "Experience the magic of the world's leading streaming platform with our Netflix clone project. Built using cutting-edge technologies such as React, Tailwind CSS, Redux, and IMDb APIs",
@@ -51,7 +63,7 @@ dis: "A modern task management app with drag-and-drop functionality built using 
     a: "https://github.com/zahidhussain998/netflix-clone",
   },
   {
-    id: 4,
+    id: 6,
     img:"4.jpg",
     title: "Tesla Clone",
     dis: "I am thrilled to have worked on this Tesla clone project, and I am confident in my ability to deliver exceptional results. Let's collaborate to bring your ideas to life and create an impressive clone of the Tesla website.",
@@ -63,7 +75,7 @@ dis: "A modern task management app with drag-and-drop functionality built using 
     a: "https://tesla-clone-seven-black.vercel.app/",
   },
   {
-    id: 5,
+    id: 7,
     img: "5.jpg",
     title: "Netialap.com",
     dis: "netialap.com is a dynamic blog website that showcases a diverse range of content and insights on various topics. Powered by Next.js and backed by Sanity CMS, it offers a seamless and immersive user experience.",
@@ -75,7 +87,7 @@ dis: "A modern task management app with drag-and-drop functionality built using 
     a: "https://github.com/zahidhussain998/radiant-pulse",
   },
   {
-    id: 6,
+    id: 8,
     img: "landing.png",
     title: "Animated-landing Page",
     dis: "is a visually engaging web application built with React.js, utilizing Clerk for authentication, Tailwind CSS for responsive and modern styling, and Framer Motion for dynamic animations.",
@@ -87,7 +99,7 @@ dis: "A modern task management app with drag-and-drop functionality built using 
     a: "https://landingpage-nine-gamma.vercel.app/",
   },
   {
-    id: 7,
+    id: 9,
     img: "chess.png",
     title: "Chess Simple",
     dis: "Developed a fully functional chess game with real-time multiplayer capabilities, The application features a responsive design and seamless user experience leveraging modern web technologies. Implemented game state management, move validation, and real-time updates",
