@@ -1,3 +1,28 @@
+<<<<<<< HEAD
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+=======
+/* Add to your global CSS */
+.border-divide {
+  border-color: rgb(0, 0, 0); /* gray-400 - darker */
+}
+
+/* Or even darker */
+.border-divide {
+  border-color: rgb(0, 0, 0); /* gray-500 */
+}
+
+/* For very dark borders */
+.border-divide {
+  border-color: rgb(0, 0, 0); /* gray-600 */
+}
+
+/* Fix for nth-child selectors in grid */
+.grid > div:nth-child(2n) {
+  /* For 2-column layout */
+}
+
+.grid > div:nth-child(3n) {
+  /* For 3-column layout */
+>>>>>>> 6fc9a7b2ee849a85e5aea422ea6adb88292d2b25
 }

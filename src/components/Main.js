@@ -47,7 +47,7 @@ function Main() {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="LinkedIn"
-                className="p-2 border-2 border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300 group"
+                className="p-2  rounded-lg hover:bg-black hover:text-white transition-all duration-300 group"
               >
                 {/* WHY: border-2 creates outline style */}
                 {/* WHY: hover:bg-black creates fill effect */}
