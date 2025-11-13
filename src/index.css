@@ -1,6 +1,18 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 
+
+
+ .highlight {
+        background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=95abb2);
+        height: auto;
+        width: auto;
+        transition:ease-in-out;
+    }
+
+    

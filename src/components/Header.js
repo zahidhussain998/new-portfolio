@@ -1,30 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { TfiAlignJustify } from "react-icons/tfi";
 
 function Header() {
+  const [show, setShow] = useState(false);
+
   return (
-    <header className="flex flex-row items-center px-2 sm:px-12 py-6">
-      <nav className='flex flex-col md:flex-row md:items-center gap-3'>
-        <div className='mr-5'>
-          <Link to="/">
-            <h1 className='uppercase transition duration-200 ease-in-out hover:text-red-600 text-sm font-bold mr-5'>
-              ZAHID HUSSAIN
-            </h1>
-          </Link>
-        </div>
-        <div className='flex flex-row gap-3 '>
-          <Link to="/" className='uppercase transition duration-200 ease-in-out hover:text-red-600 text-xs'>
+
+  <div className='flex items-center justify-between mb-20'>
+    
+
+      <div className='flex m-4 space-x-9'>
+
+      <Link to="/" className=" transition-transform duration-300 hover:scale-105">
+          <p className='font-satoshi-Black font-extrabold text-2xl'>Zahid Hussain</p>
+      </Link>
+       <Link
+            to="/"
+            className="uppercase m-2 transition duration-300 ease-in-out hover:text-[#95abb2] text-md font-satoshi-black font-medium"
+          >
             About
           </Link>
-          <Link to="/Projects" className=' uppercase transition duration-200 ease-in-out hover:text-red-600 text-xs'>
+           <Link
+            to="/Projects"
+            className="uppercase m-2 transition duration-300 ease-in-out hover:text-[#95abb2] text-md font-satoshi-black font-medium"
+            onClick={() => setShow(false)}
+          >
             Projects
           </Link>
-          <Link to="/Certificate" className=' uppercase transition duration-200 ease-in-out hover:text-red-600 text-xs'>
+      </div>
+    <header className="flex justify-between items-center px-4 sm:px-12 py-6 gap-3   ">
+          <Link
+            to="/Certificate"
+            className="uppercase m-2 transition duration-300 ease-in-out hover:text-[#95abb2] text-md font-satoshi-black font-medium"
+            onClick={() => setShow(false)}
+          >
             Certificate
           </Link>
-        </div>
-      </nav>
+      <p className='border rounded-full py-2 px-6 bg-black text-white font-satoshi font-medium'>zahidzahidhusssain@gmail.com</p>
+      
+    
     </header>
+  </div>
   );
 }
 

@@ -7,6 +7,7 @@ import Footer from "./components/Footer.js";
 import Certificate from "./Certificate.js";
 import Subscribe from "./Subscribe.js";
 import Projects from "./Projects.js";
+import About from "./components/About.js";
 
 
 
