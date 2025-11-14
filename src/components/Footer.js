@@ -6,7 +6,7 @@ function Footer() {
     <div className='p-4'>
     
     <div className='mt-32 border-t p-6 m-6'>
-      <p className='font-satoshi text-8xl text-center'>Getting to know<br/> one another</p>
+      <p className='font-satoshi text-2xl lg:text-8xl sm:text-2xl text-center'>Getting to know<br/> one another</p>
 
       <div className='flex justify-center items-center mt-5'>
 
@@ -16,7 +16,7 @@ function Footer() {
 
 
     </div>
-      <div className='font-satoshi text-lg flex justify-between items-center'>
+      <div className='font-satoshi text-sm lg:text-lg sm:text-sm flex justify-between items-center'>
         © 2025 Zahid Hussain. 
         <p>All rights reserved.</p>
       </div>

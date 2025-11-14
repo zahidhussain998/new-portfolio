@@ -6,7 +6,6 @@
 
 
 
-<<<<<<< HEAD
 
 
  .highlight {
@@ -17,7 +16,6 @@
     }
 
     
-=======
 /* Add to your global CSS */
 .border-divide {
   border-color: rgb(229 231 235 / 0.8);
@@ -31,4 +29,3 @@
 .grid > div:nth-child(3n) {
   /* For 3-column layout */
 }
->>>>>>> 6fc9a7b2ee849a85e5aea422ea6adb88292d2b25

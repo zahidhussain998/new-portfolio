@@ -114,7 +114,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
 
 function Projects({ projects }) {
   return (
-    <section className="min-h-screen bg-white py-12">
+    <section className="min-h-screen bg-white py-12 font-satoshi">
       <div className="max-w-7xl mx-auto px-6 sm:px-12">
         
         {/* Header Section */}
