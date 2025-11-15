@@ -104,11 +104,12 @@ function Main() {
               </a>
               </div>
 
-  <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-6 justify-center lg:justify-start">
+ <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-6 justify-center lg:justify-start">
+
   {/* Projects Button */}
   <a 
     href="/projects" 
-    className="relative px-2 py-3 sm:px-8 sm:py-4 bg-black text-white rounded-lg font-satoshi text-base sm:text-lg overflow-hidden group"
+    className="relative px-4 py-3 sm:px-8 sm:py-4 bg-black text-white rounded-lg font-satoshi text-base sm:text-lg overflow-hidden group"
   >
     <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
 
@@ -123,7 +124,7 @@ function Main() {
   {/* Resume Button */}
   <a 
     href="/last.pdf" 
-    className="relative px-2 py-3 sm:px-8 sm:py-4 bg-white text-black rounded-lg font-satoshi text-base sm:text-lg border-2 border-black overflow-hidden group hover:bg-black hover:text-white transition-all duration-300"
+    className="relative px-4 py-3 sm:px-8 sm:py-4 bg-white text-black rounded-lg font-satoshi text-base sm:text-lg border-2 border-black overflow-hidden group hover:bg-black hover:text-white transition-all duration-300"
   >
     <span className="relative flex items-center gap-2">
       Resume
@@ -132,7 +133,9 @@ function Main() {
       </svg>
     </span>
   </a>
+
 </div>
+
 
       </div>
       </div>

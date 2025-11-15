@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-=======
-/* Add to your global CSS */
+    overflow: hidden;
+}/* Add to your global CSS */
 .border-divide {
   border-color: rgb(0, 0, 0); /* gray-400 - darker */
 }
@@ -24,5 +23,4 @@ body{
 
 .grid > div:nth-child(3n) {
   /* For 3-column layout */
->>>>>>> 6fc9a7b2ee849a85e5aea422ea6adb88292d2b25
 }
