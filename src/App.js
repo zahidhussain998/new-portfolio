@@ -22,7 +22,7 @@ import About from "./components/About.js";
 
 function App() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center w-full">
       <div className="max-w-7xl self-stretch m-auto w-full">
         <Router>
           <Header />
