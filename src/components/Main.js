@@ -8,12 +8,12 @@ function Main() {
   
 <div className="space-y-24 max-w-8xl self-stretch m-auto w-full">
 <div className="text-center max-w-7xl mx-auto flex flex-col sm:flex-col md:flex-col lg:flex-row">
-      <div className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-32">
+      <div className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-20">
 
      <div className="">
   <img 
   src="mys.jpg"
-  className="h-32 w-32 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-96 lg:w-96 rounded-full object-cover mx-auto"
+  className="h-44 w-44 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-96 lg:w-96 rounded-full object-cover mx-auto"
 />
 
 </div>
@@ -33,7 +33,7 @@ function Main() {
 
      <div>
 
-<p className="my-8 font-satoshi text-lg text-center md:text-3xl lg:text-3xl text-gray-700 max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
+<p className="my-8 font-satoshi text-xl text-center md:text-3xl lg:text-3xl text-gray-700 max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
               {/* WHY: Slightly smaller text creates visual hierarchy */}
               {/* WHY: gray-700 is softer than pure black for secondary text */}
               I focus on products that <span className="font-bold text-black border-b-2 border-black">load fast</span>, 
@@ -106,13 +106,13 @@ function Main() {
 
   <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-6 justify-center lg:justify-start">
   {/* Projects Button */}
-  <a 
-    href="/projects" 
+  <a
+    href="/projects"
     className="relative px-2 py-3 sm:px-8 sm:py-4 bg-black text-white rounded-lg font-satoshi text-base sm:text-lg overflow-hidden group"
   >
     <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
 
-    <span className="relative flex items-center gap-2">
+    <span className="relative flex items-center justify-center gap-2 w-full">
       Projects
       <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -121,11 +121,11 @@ function Main() {
   </a>
 
   {/* Resume Button */}
-  <a 
-    href="/last.pdf" 
+  <a
+    href="/last.pdf"
     className="relative px-2 py-3 sm:px-3 sm:py-3 lg:px-8 lg-py-4 bg-white text-black rounded-lg font-satoshi text-base sm:text-lg border-2 border-black overflow-hidden group hover:bg-black hover:text-white transition-all duration-300"
   >
-    <span className="relative flex items-center gap-2">
+    <span className="relative flex items-center justify-center gap-2 w-full">
       Resume
       <svg className="w-5 h-5 transform group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

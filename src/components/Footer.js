@@ -6,7 +6,7 @@ function Footer() {
     <div className='p-4'>
     
     <div className='mt-32 border-t p-6 m-6'>
-      <p className='font-satoshi text-3xl  text-center   sm:text-3xl md:text-6xl lg:text-7xl'>Getting to know<br/> one another</p>
+      <p className='font-satoshi text-5xl text-center sm:text-center lg:text-9xl '>Getting to know<br/> one another</p>
 
       <div className='flex justify-center items-center mt-5'>
 

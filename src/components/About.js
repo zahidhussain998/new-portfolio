@@ -23,7 +23,7 @@ I’m always excited to work on meaningful projects, collaborate with great team
 
         <div className='flex  justify-between items-center mt-20 flex-col sm:flex-col lg:flex-row  '>
           
-            <p className='font-satoshi text-xl text-left sm:text-left'> 2025 – Present</p>
+            <p className='font-satoshi text-xl text-left sm:text-left '> 2025 – Present</p>
 
             <div>
             <p className='font-satoshi font-semibold text-2xl'>Convose, React-Native Developer<br/>
