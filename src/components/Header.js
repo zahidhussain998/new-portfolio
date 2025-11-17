@@ -8,7 +8,7 @@ function Header() {
 
   return (
 
-  <div className='border-b flex items-center justify-between mb-16'>
+  <div className=' sticky top-0 border-b flex items-center justify-between mb-16'>
     
 
       <div className='flex m-4 space-x-9'>

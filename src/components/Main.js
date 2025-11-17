@@ -19,7 +19,7 @@ function Main() {
 </div>
 
 
-      <div className="text-left space-y-2 ">
+      <div className="text-left space-y-2  ">
     <h1 className="font-satoshi  text-5xl   sm:text-4xl md:text-8xl lg:text-8xl  leading-none space-y-2 text-center sm:text-center lg:text-left">
                 {/* WHY: text-9xl creates bold, impossible-to-miss headline */}
                 {/* WHY: bg-clip-text text-transparent creates gradient text effect */}
@@ -122,7 +122,7 @@ function Main() {
 
   {/* Resume Button */}
   <a
-    href="/last.pdf"
+    href="/myresume.pdf"
     className="relative px-2 py-3 sm:px-3 sm:py-3 lg:px-8 lg-py-4 bg-white text-black rounded-lg font-satoshi text-base sm:text-lg border-2 border-black overflow-hidden group hover:bg-black hover:text-white transition-all duration-300"
   >
     <span className="relative flex items-center justify-center gap-2 w-full">
