@@ -71,9 +71,9 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     tag1: "React.js",
     tag2: "Tailwindcss",
     tag3: "Typescript",
-    button: "Source Code",
+    button: "Live-Link",
     date: "2023/4/5",
-    a: "https://github.com/zahidhussain998/netflix-clone",
+    a: "https://netflix-clone-9aadtkrv3-zahidhussain998s-projects.vercel.app/",
   },
   {
     id: 7,
