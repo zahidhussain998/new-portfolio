@@ -1,22 +1,37 @@
 import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import About from "./About";
+import { motion } from "framer-motion";
 
 
 function Main() {
   return (
+     
   
 <div className="space-y-24 max-w-8xl self-stretch m-auto w-full">
 <div className="text-center max-w-7xl mx-auto flex flex-col sm:flex-col md:flex-col lg:flex-row">
-      <div className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-20">
+      <motion.div
+      
+  initial={{ y: 100, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  viewport={{ once: true, amount: 0.5 }}
+  transition={{
+    duration: 1,
+    ease: [0.43, 0.13, 0.23, 0.96]
+  }}
 
-     <div className="">
+      className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-20">
+
+     <div
+  className="font-satoshi text-5xl text-center sm:text-center lg:text-9xl"
+
+>
   <img 
   src="mys.jpg"
   className="h-44 w-44 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-96 lg:w-96 rounded-full object-cover mx-auto"
 />
+  </div>
 
-</div>
 
 
       <div className="text-left space-y-2  ">
@@ -135,7 +150,7 @@ function Main() {
 </div>
 
       </div>
-      </div>
+      </motion.div>
 
 
 

@@ -22,6 +22,9 @@ import About from "./components/About.js";
 
 function App() {
   return (
+
+    <div>
+
     <main className="flex flex-col items-center w-full">
       <div className="max-w-7xl self-stretch m-auto w-full">
         <Router>
@@ -42,6 +45,7 @@ function App() {
         </Router>
       </div>
     </main>
+    </div>
   );
 }
 
