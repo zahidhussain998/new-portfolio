@@ -48,12 +48,12 @@ function Main() {
 
      <div>
 
-<p className="my-8 font-satoshi text-xl text-center md:text-3xl lg:text-3xl text-gray-700 max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
+<p className="my-8 font-satoshi text-xl text-center md:text-3xl lg:text-3xl  max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
               {/* WHY: Slightly smaller text creates visual hierarchy */}
               {/* WHY: gray-700 is softer than pure black for secondary text */}
-              I focus on products that <span className="font-bold text-black border-b-2 border-black">load fast</span>, 
-              <span className="font-bold text-black border-b-2 border-black"> look sharp</span>,<br/> and 
-              <span className="font-bold text-black border-b-2 border-black"> feel smooth</span>.
+              I focus on products that <span className="font-bold  border-b-2 border-black">load fast</span>, 
+              <span className="font-bold  border-b-2 border-black"> look sharp</span>,<br/> and 
+              <span className="font-bold  border-b-2 border-black"> feel smooth</span>.
               {/* WHY: border-b-2 underlines key benefits */}
               {/* WHY: font-bold makes important words stand out */}
             </p>        
@@ -122,18 +122,39 @@ function Main() {
   <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-6 justify-center lg:justify-start">
   {/* Projects Button */}
   <a
-    href="/projects"
-    className="relative px-2 py-3 sm:px-8 sm:py-4 bg-black text-white rounded-lg font-satoshi text-base sm:text-lg overflow-hidden group"
-  >
-    <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
+  href="/projects"
+  className="group relative inline-block rounded-xl p-[2px] overflow-hidden"
+>
+  {/* Rotating border */}
+  <span
+    className="absolute inset-0 animate-rotate-border 
+    bg-[conic-gradient(from_0deg,#95abb2,transparent_120deg,#95abb2)]"
+  ></span>
 
-    <span className="relative flex items-center justify-center gap-2 w-full">
-      Projects
-      <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-      </svg>
-    </span>
-  </a>
+  {/* Inner button */}
+  <span
+    className="relative flex items-center justify-center gap-2 
+    rounded-xl bg-black px-6 py-3 sm:px-8 sm:py-4
+    text-white font-satoshi text-base sm:text-lg
+    transition-colors duration-300 group-hover:bg-slate-900"
+  >
+    Projects
+    <svg
+      className="w-5 h-5 transform transition-transform group-hover:translate-x-1"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  </span>
+</a>
+
 
   {/* Resume Button */}
   <a
