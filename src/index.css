@@ -22,7 +22,7 @@ body {
   --text: #e6eef6;
   --muted: #94a3b8;
   --border: rgba(255,255,255,0.06);
-  --accent: #95abb2;
+  --accent: hsl(194, 16%, 64%);
 }
 
 body {
@@ -45,6 +45,11 @@ html, body {
   to {
     transform: rotate(360deg);
   }
+}
+
+@theme {
+  --color-custom-pr: #47019d;
+  --color-main: #e002a2;
 }
 
 .animate-rotate-border {

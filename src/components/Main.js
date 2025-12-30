@@ -51,9 +51,9 @@ function Main() {
 <p className="my-3 font-satoshi text-xl text-center md:text-3xl lg:text-2xl  max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
               {/* WHY: Slightly smaller text creates visual hierarchy */}
               {/* WHY: gray-700 is softer than pure black for secondary text */}
-              I focus on products that <span className="font-bold  border-b-2 border-black">load fast</span>, 
-              <span className="font-bold  border-b-2 border-black"> look sharp</span>,<br/> and 
-              <span className="font-bold  border-b-2 border-black"> feel smooth</span>.
+              I focus on products that <span className="font-bold  border-b-2 border-black text-hsl(194, 16%, 64%) ">load fast</span>, 
+              <span className="font-bold  border-b-2 border-black text-hsl(194, 16%, 64%)"> look sharp</span>,<br/> and 
+              <span className="font-bold  border-b-2 border-black text-hsl(194, 16%, 64%)"> feel smooth</span>.
               {/* WHY: border-b-2 underlines key benefits */}
               {/* WHY: font-bold makes important words stand out */}
             </p>        
