@@ -28,27 +28,27 @@ function Main() {
 >
   <img 
   src="mys.jpg"
-  className="h-44 w-44 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-96 lg:w-96 rounded-full object-cover mx-auto"
+  className="h-44 w-44 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-[30rem] lg:w-96 object-cover mx-auto"
 />
   </div>
 
 
 
-      <div className="text-left space-y-2  ">
-    <h1 className="font-satoshi  text-5xl   sm:text-4xl md:text-8xl lg:text-8xl  leading-none space-y-2 text-center sm:text-center lg:text-left">
+      <div className="text-left  ">
+    <h1 className="font-satoshi  text-4xl   sm:text-4xl md:text-8xl lg:text-8xl  leading-none space-y-2 text-center sm:text-center lg:text-left">
                 {/* WHY: text-9xl creates bold, impossible-to-miss headline */}
                 {/* WHY: bg-clip-text text-transparent creates gradient text effect */}
                 {/* WHY: leading-none removes extra spacing for impact */}
                 Front-End
               </h1>
               <h1 className="font-satoshi sm:text-center  md:text-8xl lg:text-8xl  text-5xl   sm:text-3xl leading-none text-center lg:text-left ">
-                Developer
+                Engineer
               </h1>{/* <p className="text-left "> Based in Pakistan</p> */}
 
 
      <div>
 
-<p className="my-8 font-satoshi text-xl text-center md:text-3xl lg:text-3xl  max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
+<p className="my-3 font-satoshi text-xl text-center md:text-3xl lg:text-2xl  max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
               {/* WHY: Slightly smaller text creates visual hierarchy */}
               {/* WHY: gray-700 is softer than pure black for secondary text */}
               I focus on products that <span className="font-bold  border-b-2 border-black">load fast</span>, 
@@ -57,10 +57,17 @@ function Main() {
               {/* WHY: border-b-2 underlines key benefits */}
               {/* WHY: font-bold makes important words stand out */}
             </p>        
+                  <div>
+                <IoLocationOutline className="inline-block mb-1 mr-1 text-2xl"/>
+                <span className="font-satoshi text-lg sm:text-base md:text-xl lg:text-xl">Based in Pakistan</span>
+
+                  </div>
      </div>
 
         
-                <div className="flex gap-3  justify-center sm:justify-start ">
+                <div className="flex   justify-center sm:justify-start ">
+
+
               {/* WHY: gap-3 keeps icons close together */}
               {/* WHY: pt-4 adds breathing room from subtitle */}
               
@@ -119,7 +126,7 @@ function Main() {
               </a>
               </div>
 
-  <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-6 justify-center lg:justify-start">
+  <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-2 justify-center lg:justify-start">
   {/* Projects Button */}
   <a
   href="/projects"
@@ -127,7 +134,8 @@ function Main() {
 >
   {/* Rotating border */}
   <span
-    className="absolute inset-0 animate-rotate-border 
+    className="       absolute inset-[-50%]
+ animate-rotate-border 
     bg-[conic-gradient(from_0deg,#95abb2,transparent_120deg,#95abb2)]"
   ></span>
 
