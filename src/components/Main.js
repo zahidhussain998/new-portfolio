@@ -28,7 +28,7 @@ function Main() {
 >
   <img 
   src="mys.jpg"
-  className="h-44 w-44 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-[30rem] lg:w-96 object-cover mx-auto"
+  className="h-44 w-44 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-[28rem] lg:w-96 object-cover mx-auto"
 />
   </div>
 
