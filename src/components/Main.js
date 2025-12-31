@@ -20,7 +20,7 @@ function Main() {
     ease: [0.43, 0.13, 0.23, 0.96]
   }}
 
-      className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-20">
+      className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-16">
 
      <div
   className="font-satoshi text-5xl text-center sm:text-center lg:text-9xl"
@@ -35,13 +35,13 @@ function Main() {
 
 
       <div className="text-left  ">
-    <h1 className="font-satoshi  text-4xl   sm:text-4xl md:text-8xl lg:text-8xl  leading-none space-y-2 text-center sm:text-center lg:text-left">
+    <h1 className="font-satoshi  text-5xl   sm:text-4xl md:text-6xl lg:text-8xl  leading-none space-y-2 text-center sm:text-center lg:text-left">
                 {/* WHY: text-9xl creates bold, impossible-to-miss headline */}
                 {/* WHY: bg-clip-text text-transparent creates gradient text effect */}
                 {/* WHY: leading-none removes extra spacing for impact */}
                 Front-End
               </h1>
-              <h1 className="font-satoshi sm:text-center  md:text-8xl lg:text-8xl  text-5xl   sm:text-3xl leading-none text-center lg:text-left ">
+              <h1 className="font-satoshi sm:text-center  md:text-6xl lg:text-8xl  text-5xl   sm:text-3xl leading-none text-center lg:text-left ">
                 Engineer
               </h1>{/* <p className="text-left "> Based in Pakistan</p> */}
 
@@ -57,9 +57,9 @@ function Main() {
               {/* WHY: border-b-2 underlines key benefits */}
               {/* WHY: font-bold makes important words stand out */}
             </p>        
-                  <div>
+                  <div className="text-center sm:text-center md:text-left lg:text-left">
                 <IoLocationOutline className="inline-block mb-1 mr-1 text-2xl"/>
-                <span className="font-satoshi text-lg sm:text-base md:text-xl lg:text-xl">Based in Pakistan</span>
+                <span className="font-satoshi text-lg sm:text-base md:text-xl lg:text-xl">Based in Karachi Sindh Pakistan</span>
 
                   </div>
      </div>
