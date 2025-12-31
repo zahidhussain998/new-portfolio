@@ -13,11 +13,19 @@ function Footer() {
   whileInView={{ y: 0, opacity: 1 }}
   viewport={{ once: true, amount: 0.5 }}
   transition={{
-    duration: 1,
+    duration:1,
     ease: [0.43, 0.13, 0.23, 0.96]
   }}
 >
   Getting to know<br/> one another
+
+  
+
+
+
+
+
+
 </motion.p>
       <div
        className='flex justify-center items-center mt-5'>

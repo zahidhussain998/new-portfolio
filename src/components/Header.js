@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import { TfiAlignJustify } from "react-icons/tfi";
 
-function Header() {
+function Header({ darkMode, toggleDarkMode }) {
   const [show, setShow] = useState(false);
 
   return (
@@ -43,9 +43,16 @@ function Header() {
           >
             Certificate
           </Link>
-      <p className='border hidden  sm:hidden lg:block rounded-full py-2 px-6 bg-black text-white font-satoshi font-medium'>zahidzahidhusssain@gmail.com</p>
-      
-    
+      <p className={`border hidden  sm:hidden lg:block rounded-full py-2 px-6 ${darkMode ? 'bg-white text-black' : 'bg-black text-white'} font-satoshi font-medium`}>zahidzahidhusssain@gmail.com</p>
+      {/* Theme toggle button */}
+      <button
+        onClick={toggleDarkMode}
+        aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+        className="ml-4 rounded-full p-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 border"
+      >
+        {darkMode ? <FaSun /> : <FaMoon />}
+      </button>
+
     </header>
   </div>
   );

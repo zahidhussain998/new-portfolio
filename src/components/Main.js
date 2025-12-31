@@ -20,7 +20,7 @@ function Main() {
     ease: [0.43, 0.13, 0.23, 0.96]
   }}
 
-      className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-20">
+      className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-16">
 
      <div
   className="font-satoshi text-5xl text-center sm:text-center lg:text-9xl"
@@ -28,39 +28,46 @@ function Main() {
 >
   <img 
   src="mys.jpg"
-  className="h-44 w-44 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-96 lg:w-96 rounded-full object-cover mx-auto"
+  className="h-44 w-44 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-[28rem] lg:w-96 object-cover mx-auto"
 />
   </div>
 
 
 
-      <div className="text-left space-y-2  ">
-    <h1 className="font-satoshi  text-5xl   sm:text-4xl md:text-8xl lg:text-8xl  leading-none space-y-2 text-center sm:text-center lg:text-left">
+      <div className="text-left  ">
+    <h1 className="font-satoshi  text-5xl   sm:text-4xl md:text-6xl lg:text-8xl  leading-none space-y-2 text-center sm:text-center lg:text-left">
                 {/* WHY: text-9xl creates bold, impossible-to-miss headline */}
                 {/* WHY: bg-clip-text text-transparent creates gradient text effect */}
                 {/* WHY: leading-none removes extra spacing for impact */}
                 Front-End
               </h1>
-              <h1 className="font-satoshi sm:text-center  md:text-8xl lg:text-8xl  text-5xl   sm:text-3xl leading-none text-center lg:text-left ">
-                Developer
+              <h1 className="font-satoshi sm:text-center  md:text-6xl lg:text-8xl  text-5xl   sm:text-3xl leading-none text-center lg:text-left ">
+                Engineer
               </h1>{/* <p className="text-left "> Based in Pakistan</p> */}
 
 
      <div>
 
-<p className="my-8 font-satoshi text-xl text-center md:text-3xl lg:text-3xl text-gray-700 max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
+<p className="my-3 font-satoshi text-xl text-center md:text-3xl lg:text-2xl  max-w-3xl leading-tight sm:text-lg sm:text-center lg:text-left">
               {/* WHY: Slightly smaller text creates visual hierarchy */}
               {/* WHY: gray-700 is softer than pure black for secondary text */}
-              I focus on products that <span className="font-bold text-black border-b-2 border-black">load fast</span>, 
-              <span className="font-bold text-black border-b-2 border-black"> look sharp</span>,<br/> and 
-              <span className="font-bold text-black border-b-2 border-black"> feel smooth</span>.
+              I focus on products that <span className="font-bold  border-b-2 border-black text-hsl(194, 16%, 64%) ">load fast</span>, 
+              <span className="font-bold  border-b-2 border-black text-hsl(194, 16%, 64%)"> look sharp</span>,<br/> and 
+              <span className="font-bold  border-b-2 border-black text-hsl(194, 16%, 64%)"> feel smooth</span>.
               {/* WHY: border-b-2 underlines key benefits */}
               {/* WHY: font-bold makes important words stand out */}
             </p>        
+                  <div className="text-center sm:text-center md:text-left lg:text-left">
+                <IoLocationOutline className="inline-block mb-1 mr-1 text-2xl"/>
+                <span className="font-satoshi text-lg sm:text-base md:text-xl lg:text-xl">Based in Karachi Sindh Pakistan</span>
+
+                  </div>
      </div>
 
         
-                <div className="flex gap-3  justify-center sm:justify-start ">
+                <div className="flex   justify-center sm:justify-start ">
+
+
               {/* WHY: gap-3 keeps icons close together */}
               {/* WHY: pt-4 adds breathing room from subtitle */}
               
@@ -119,21 +126,43 @@ function Main() {
               </a>
               </div>
 
-  <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-6 justify-center lg:justify-start">
+  <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-2 justify-center lg:justify-start">
   {/* Projects Button */}
   <a
-    href="/projects"
-    className="relative px-2 py-3 sm:px-8 sm:py-4 bg-black text-white rounded-lg font-satoshi text-base sm:text-lg overflow-hidden group"
-  >
-    <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
+  href="/projects"
+  className="group relative inline-block rounded-xl p-[2px] overflow-hidden"
+>
+  {/* Rotating border */}
+  <span
+    className="       absolute inset-[-50%]
+ animate-rotate-border 
+    bg-[conic-gradient(from_0deg,#95abb2,transparent_120deg,#95abb2)]"
+  ></span>
 
-    <span className="relative flex items-center justify-center gap-2 w-full">
-      Projects
-      <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-      </svg>
-    </span>
-  </a>
+  {/* Inner button */}
+  <span
+    className="relative flex items-center justify-center gap-2 
+    rounded-xl bg-black px-6 py-3 sm:px-8 sm:py-4
+    text-white font-satoshi text-base sm:text-lg
+    transition-colors duration-300 group-hover:bg-slate-900"
+  >
+    Projects
+    <svg
+      className="w-5 h-5 transform transition-transform group-hover:translate-x-1"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  </span>
+</a>
+
 
   {/* Resume Button */}
   <a

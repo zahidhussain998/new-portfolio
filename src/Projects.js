@@ -127,7 +127,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
 
 function Projects({ projects }) {
   return (
-    <section className="min-h-screen bg-white py-12 font-satoshi">
+    <section className="min-h-screen py-12 font-satoshi">
       <div className="max-w-7xl mx-auto px-6 sm:px-12">
         
         {/* Header Section */}
@@ -140,7 +140,7 @@ function Projects({ projects }) {
               className="border-divide group relative overflow-hidden border-r border-b border-l border-t last:border-r-0 md:nth-child-2n:border-r-0 lg:nth-child-2n:border-r lg:nth-child-3n:border-r-0"
             >
               {/* Hover Background Effect */}
-              <div className="absolute inset-0 bg-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0  transition-opacity duration-300"></div>
               
               {/* Card Content */}
               <div className="relative p-6 flex flex-col h-full">
@@ -162,30 +162,30 @@ function Projects({ projects }) {
                   rel="noopener noreferrer"
                   className="block mb-3"
                 >
-                  <h5 className="text-xl font-bold text-black group-hover:text-gray-700 transition-colors duration-300">
+                  <h5 className="text-xl font-bold  transition-colors duration-300">
                     {project.title}
                   </h5>
                 </a>
 
                 {/* Project Description */}
-                <div className="mb-4 flex-grow text-gray-700">
+                <div className="mb-4 flex-grow ">
                   <ShowMore lines={3}>{project.dis}</ShowMore>
                 </div>
 
                 {/* Technology Tags */}
                 <ul className="flex flex-wrap gap-2 mb-4">
                   <li>
-                    <span className="inline-block border border-gray-300 rounded-md px-3 py-1 text-xs font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+                    <span className="inline-block border border-gray-300 rounded-md px-3 py-1 text-xs font-medium   transition-colors">
                       {project.tag1}
                     </span>
                   </li>
                   <li>
-                    <span className="inline-block border border-gray-300 rounded-md px-3 py-1 text-xs font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+                    <span className="inline-block border border-gray-300 rounded-md px-3 py-1 text-xs font-medium   transition-colors">
                       {project.tag2}
                     </span>
                   </li>
                   <li>
-                    <span className="inline-block border border-gray-300 rounded-md px-3 py-1 text-xs font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+                    <span className="inline-block border border-gray-300 rounded-md px-3 py-1 text-xs font-medium   transition-colors">
                       {project.tag3}
                     </span>
                   </li>
@@ -197,7 +197,7 @@ function Projects({ projects }) {
                     href={project.a}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center border-2 border-black text-black py-2 px-6 rounded-lg font-semibold transition-all duration-300 hover:bg-black hover:text-white hover:shadow-lg hover:scale-105 active:scale-95"
+                    className="inline-flex items-center border-2  py-2 px-6 rounded-lg font-semibold transition-all duration-300 hover:bg-black hover:text-white hover:shadow-lg hover:scale-105 active:scale-95"
                   >
                     {project.button}
                   </a>

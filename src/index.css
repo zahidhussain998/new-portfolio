@@ -8,6 +8,29 @@ body {
   overflow-x: hidden;
 }
 
+/* Theme variables */
+:root {
+  --bg: #ffffff;
+  --text: #0f172a; /* slate-900 */
+  --muted: #6b7280; /* gray-500 */
+  --border: rgba(0,0,0,0.08);
+  --accent: #95abb2;
+}
+
+.dark {
+  --bg: rgb(0, 0, 0);
+  --text: #e6eef6;
+  --muted: #94a3b8;
+  --border: rgba(255,255,255,0.06);
+  --accent: hsl(194, 16%, 64%);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,6 +41,20 @@ html, body {
   overflow-x: hidden;
 }
 
+@keyframes rotate-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@theme {
+  --color-custom-pr: #47019d;
+  --color-main: #e002a2;
+}
+
+.animate-rotate-border {
+  animation: rotate-border 4s linear infinite;
+}
 
 
 

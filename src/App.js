@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header.js";
 import Main from "./components/Main.js";
@@ -21,6 +21,15 @@ import About from "./components/About.js";
 // };
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Toggle a class on the root element so we can style based on `.dark`
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) root.classList.add("dark");
+    else root.classList.remove("dark");
+  }, [darkMode]);
+
   return (
 
     <div>
@@ -28,7 +37,7 @@ function App() {
     <main className="flex flex-col items-center w-full">
       <div className="max-w-7xl self-stretch m-auto w-full">
         <Router>
-          <Header />
+          <Header darkMode={darkMode} toggleDarkMode={() => setDarkMode(d => !d)} />
           <div className="px-6 sm:px-12 py-5">
             <Routes>
               <Route path="/" element={<Main />} />
