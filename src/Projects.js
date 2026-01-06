@@ -1,5 +1,5 @@
 import React from "react";
-import { ShowMore } from '@re-dev/react-truncate'
+import { ShowMore } from "@re-dev/react-truncate";
 
 const projectsData = [
   {
@@ -18,7 +18,7 @@ const projectsData = [
     id: 1,
     img: "task.png",
     title: "task management",
-dis: "A modern task management app with drag-and-drop functionality built using dnd-kit. Features smooth animations, intuitive board organization, and efficient state management for seamless task tracking and productivity.",
+    dis: "A modern task management app with drag-and-drop functionality built using dnd-kit. Features smooth animations, intuitive board organization, and efficient state management for seamless task tracking and productivity.",
     tag1: "dnd-kit",
     tag2: "next.js",
     tag3: "state-management",
@@ -26,11 +26,11 @@ dis: "A modern task management app with drag-and-drop functionality built using 
     date: "2025/3/24",
     a: "https://taskms-zahidhussain998-zahidhussain998s-projects.vercel.app/",
   },
-    {
+  {
     id: 3,
     img: "booking.png",
     title: "booking-system",
-dis: "Complete booking solution with live slot availability, secure Stripe payments, and automatic Google Calendar scheduling. Users receive instant email confirmations via Resend, all wrapped in a beautiful Aceternity UI for effortless reservations",
+    dis: "Complete booking solution with live slot availability, secure Stripe payments, and automatic Google Calendar scheduling. Users receive instant email confirmations via Resend, all wrapped in a beautiful Aceternity UI for effortless reservations",
     tag1: "supabase",
     tag2: "redux-thunk",
     tag3: "stripe",
@@ -50,7 +50,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     date: "2024/5/13",
     a: "https://currency-converter-phi-seven.vercel.app/",
   },
-     {
+  {
     id: 5,
     img: "chatapp.png",
     title: "Chat-app Application",
@@ -88,7 +88,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
   },
   {
     id: 8,
-    img:"4.jpg",
+    img: "4.jpg",
     title: "Tesla Clone",
     dis: "I am thrilled to have worked on this Tesla clone project, and I am confident in my ability to deliver exceptional results. Let's collaborate to bring your ideas to life and create an impressive clone of the Tesla website.",
     tag1: "React.js",
@@ -137,14 +137,12 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
   
 ];
 
-
 function Projects({ projects }) {
   return (
     <section className="min-h-screen py-12 font-satoshi">
       <div className="max-w-7xl mx-auto px-6 sm:px-12">
-        
         {/* Header Section */}
-    
+
         {/* Projects Grid with Border-Divide */}
         <div className="border-divide grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t ">
           {projects.map((project, index) => (
@@ -154,10 +152,9 @@ function Projects({ projects }) {
             >
               {/* Hover Background Effect */}
               <div className="absolute inset-0  transition-opacity duration-300"></div>
-              
+
               {/* Card Content */}
               <div className="relative p-6 flex flex-col h-full">
-                
                 {/* Project Image */}
                 <div className="relative overflow-hidden rounded-lg mb-4 border border-gray-200 shadow-sm group-hover:shadow-lg transition-shadow duration-300">
                   <img
@@ -169,9 +166,9 @@ function Projects({ projects }) {
                 </div>
 
                 {/* Project Title */}
-                <a 
-                  href={project.a} 
-                  target="_blank" 
+                <a
+                  href={project.a}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="block mb-3"
                 >
@@ -214,7 +211,7 @@ function Projects({ projects }) {
                   >
                     {project.button}
                   </a>
-                  
+
                   <div className="flex items-center text-xs text-gray-500">
                     <svg
                       stroke="currentColor"
@@ -228,7 +225,14 @@ function Projects({ projects }) {
                       width="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="18"
+                        rx="2"
+                        ry="2"
+                      ></rect>
                       <line x1="16" y1="2" x2="16" y2="6"></line>
                       <line x1="8" y1="2" x2="8" y2="6"></line>
                       <line x1="3" y1="10" x2="21" y2="10"></line>
@@ -245,7 +249,6 @@ function Projects({ projects }) {
         </div>
 
         {/* Footer Section */}
-        
       </div>
     </section>
   );
