@@ -8,8 +8,8 @@ function Main() {
   return (
      
   
-<div className="space-y-24 max-w-8xl self-stretch m-auto w-full">
-<div className="text-center max-w-7xl mx-auto flex flex-col sm:flex-col md:flex-col lg:flex-row">
+<div className="space-y-24  max-w-8xl self-stretch m-auto w-full">
+<div className="text-center max-w-7xl mx-auto flex justify-center flex-col sm:flex-col md:flex-col lg:flex-row">
       <motion.div
       
   initial={{ y: 100, opacity: 0 }}
@@ -20,7 +20,7 @@ function Main() {
     ease: [0.43, 0.13, 0.23, 0.96]
   }}
 
-      className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-16">
+      className="flex justify-between items-center flex-col sm:flex-col md:flex-col lg:flex-row gap-32">
 
      <div
   className="font-satoshi text-5xl text-center sm:text-center lg:text-9xl"

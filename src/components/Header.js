@@ -21,14 +21,14 @@ function Header({ darkMode, toggleDarkMode }) {
 
        <Link
             to="/"
-            className="uppercase m-2 transition duration-300 racking-tighter sm:tracking-tighter ease-in-out hover:text-[#95abb2] font-satoshi-black font-medium text-sm    sm:text-sm md:text-xl lg:text-lg"
+            className="uppercase m-2 transition duration-300 racking-tighter sm:tracking-tighter ease-in-out hover:text-[#95abb2] font-satoshi-black font-medium text-sm    sm:text-sm md:text-xl lg:text-[1.1rem]"
           >
             About
           </Link>
       
            <Link
             to="/Projects"
-            className="uppercase m-2 transition duration-300 ease-in-out hover:text-[#95abb2] font-satoshi-black font-medium text-sm tracking-tighter sm:tracking-tighter  sm:text-sm md:text-xl lg:text-lg"
+            className="uppercase m-2 transition duration-300 ease-in-out hover:text-[#95abb2] font-satoshi-black font-medium text-sm tracking-tighter sm:tracking-tighter  sm:text-sm md:text-xl lg:text-[1.1rem]"
             onClick={() => setShow(false)}
           >
             Projects
@@ -38,7 +38,7 @@ function Header({ darkMode, toggleDarkMode }) {
     <header className="flex justify-between items-center px-4 sm:px-12 py-6 gap-3   ">
           <Link
             to="/Certificate"
-            className="uppercase racking-tighter sm:tracking-tighter hidden sm:hidden lg:block m-2 transition duration-300 ease-in-out   hover:text-[#95abb2] text-md font-satoshi-black font-medium"
+            className="uppercase racking-tighter sm:tracking-tighter hidden sm:hidden lg:block m-2 transition duration-300 ease-in-out   hover:text-[#95abb2] text-md font-satoshi-black font-medium lg:text-[1.1rem]"
             onClick={() => setShow(false)}
           >
             Certificate
