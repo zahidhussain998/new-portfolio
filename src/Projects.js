@@ -134,7 +134,9 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     date: "2024/6/24",
     a: "https://github.com/zahidhussain998/simple-chess",
   },
+  
 ];
+
 
 function Projects({ projects }) {
   return (
