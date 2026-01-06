@@ -50,9 +50,20 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     date: "2024/5/13",
     a: "https://currency-converter-phi-seven.vercel.app/",
   },
-
-  {
+     {
     id: 5,
+    img: "chatapp.png",
+    title: "Chat-app Application",
+    dis: "Experience real-time conversations with our modern chat app built using React, Node.js, Express, Socket.io, and Tailwind CSS. Connect instantly, send messages live, and enjoy a clean, responsive interface",
+    tag1: "Socket.io",
+    tag2: "Node.js",
+    tag3: "React",
+    button: "Source Code",
+    date: "2025/9/5",
+    a: "https://github.com/zahidhussain998/messaging-application",
+  },
+  {
+    id: 6,
     img: "2.jpg",
     title: "News Application",
     dis: "Discover the latest news with our cutting-edge news app built using TypeScript, Next.js, Tailwind CSS, and GraphQL. Stay informed with real-time updates, explore various news categories",
@@ -64,7 +75,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     a: "https://cn-news-nine.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     img: "3.jpg",
     title: "Netflix Clone",
     dis: "Experience the magic of the world's leading streaming platform with our Netflix clone project. Built using cutting-edge technologies such as React, Tailwind CSS, Redux, and IMDb APIs",
@@ -76,7 +87,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     a: "https://netflix-clone-9aadtkrv3-zahidhussain998s-projects.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     img:"4.jpg",
     title: "Tesla Clone",
     dis: "I am thrilled to have worked on this Tesla clone project, and I am confident in my ability to deliver exceptional results. Let's collaborate to bring your ideas to life and create an impressive clone of the Tesla website.",
@@ -88,7 +99,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     a: "https://tesla-clone-seven-black.vercel.app/",
   },
   {
-    id: 8,
+    id: 9,
     img: "5.jpg",
     title: "Netialap.com",
     dis: "netialap.com is a dynamic blog website that showcases a diverse range of content and insights on various topics. Powered by Next.js and backed by Sanity CMS, it offers a seamless and immersive user experience.",
@@ -100,7 +111,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     a: "https://blog-app-nine-lyart.vercel.app/",
   },
   {
-    id: 9,
+    id: 10,
     img: "landing.png",
     title: "Animated-landing Page",
     dis: "is a visually engaging web application built with React.js, utilizing Clerk for authentication, Tailwind CSS for responsive and modern styling, and Framer Motion for dynamic animations.",
@@ -112,7 +123,7 @@ dis: "Complete booking solution with live slot availability, secure Stripe payme
     a: "https://landingpage-nine-gamma.vercel.app/",
   },
   {
-    id: 10,
+    id: 11,
     img: "chess.png",
     title: "Chess Simple",
     dis: "Developed a fully functional chess game with real-time multiplayer capabilities, The application features a responsive design and seamless user experience leveraging modern web technologies. Implemented game state management, move validation, and real-time updates",
