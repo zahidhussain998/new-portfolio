@@ -39,7 +39,7 @@ function Main() {
                 {/* WHY: text-9xl creates bold, impossible-to-miss headline */}
                 {/* WHY: bg-clip-text text-transparent creates gradient text effect */}
                 {/* WHY: leading-none removes extra spacing for impact */}
-                Front-End
+                Full-Stack
               </h1>
               <h1 className="font-satoshi sm:text-center  md:text-6xl lg:text-8xl  text-5xl   sm:text-3xl leading-none text-center lg:text-left ">
                 Engineer
