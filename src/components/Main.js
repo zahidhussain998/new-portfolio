@@ -34,7 +34,7 @@ function Main() {
 
 
 
-      <div className="text-left  ">
+      <div className="text-left">
     <h1 className="font-satoshi  text-5xl   sm:text-4xl md:text-6xl lg:text-8xl  leading-none space-y-2 text-center sm:text-center lg:text-left">
                 {/* WHY: text-9xl creates bold, impossible-to-miss headline */}
                 {/* WHY: bg-clip-text text-transparent creates gradient text effect */}
